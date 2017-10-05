@@ -27,6 +27,8 @@ module Blogit
       gh_blockcode: true,
     }
 
+    config_accessor(:parent_controller) { 'ApplicationController' }
+
     ##
     # How do you want to handle comments for your blog?
     #   Valid options are :active_record, :disquss, or :no for none.
